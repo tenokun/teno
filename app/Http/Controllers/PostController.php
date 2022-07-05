@@ -2,14 +2,19 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Post;
 use App\Http\Requests\PostRequest;
+=======
+use App\post;
+>>>>>>> 25285e80d02e3cb475f2a88136cab6e045dffb53
 use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
     public function index(Post $post)
     {
+<<<<<<< HEAD
         return view('index')->with(['posts' => $post->getPaginateByLimit()]);
     }
     
@@ -41,5 +46,8 @@ class PostController extends Controller
         $post->fill($input_post)->save();
 
         return redirect('/posts/' . $post->id);
+=======
+        return $post->get();
+>>>>>>> 25285e80d02e3cb475f2a88136cab6e045dffb53
     }
 }
