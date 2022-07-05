@@ -21,6 +21,7 @@
                     <input type='text' name='post[body]' value="{{ $post->body }}">
                 </div>
                 <input type="submit" value="更新">
+                
             </form>
         </div>
     </body>
