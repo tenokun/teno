@@ -23,5 +23,6 @@
         <div class='paginate'>
             {{ $posts->links() }}
         </div>
+        <div class='back'>[<a href='/'>back</a>]</div>
     </body>
 </html>
